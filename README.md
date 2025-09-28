@@ -75,20 +75,7 @@ Untuk menjalankan proyek ini di lingkungan lokal, ikuti langkah-langkah berikut:
     cd NLP-mBERT-LSTM
     ```
 
-2.  **Buat dan aktifkan virtual environment:**
-
-    ```bash
-    # Membuat environment
-    python -m venv venv
-
-    # Mengaktifkan di Windows
-    .\venv\Scripts\activate
-
-    # Mengaktifkan di macOS/Linux
-    source venv/bin/activate
-    ```
-
-3.  **Instal semua pustaka yang dibutuhkan:**
+2.  **Instal semua pustaka yang dibutuhkan:**
     ```bash
     pip install -r requirements.txt
     ```
