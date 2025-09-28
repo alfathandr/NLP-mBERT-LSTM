@@ -92,30 +92,26 @@ Pilih salah satu metode (`ros`, `rus`, `ros_enn`) untuk membuat dataset seimbang
 
 #### Contoh menggunakan metode
 
-    persiapan data metode ROS+ENN
+1. **persiapan data metode ROS+ENN**
 
-    ```bash
-    python 01_data_preparation.py --method ros_enn
-    ```
+   ```bash
+   python 01_data_preparation.py --method ros_enn
+   ```
 
-    training pada data hasil ROS+ENN metode ROS+ENN
+2. **training pada data hasil ROS+ENN metode ROS+ENN**
 
-    ```bash
-    python 02_train.py --method ros_enn
-    ```
+   ```bash
+   python 02_train.py --method ros_enn
+   ```
 
-    evaluasi model ROS+ENN metode ROS+ENN
+3. **evaluasi model ROS+ENN metode ROS+ENN**
 
-    ```bash
-    python 03_evaluate.py --method ros_enn
-    ```
+   ```bash
+   python 03_evaluate.py --method ros_enn
+   ```
 
-    Gunakan model untuk memprediksi sentimen dari kalimat baru.
+4. **Gunakan model untuk memprediksi sentimen dari kalimat baru.**
 
-    ```bash
-    python predict.py --method ros_enn
-    ```
-
-```
-
-```
+   ```bash
+   python predict.py --method ros_enn
+   ```
