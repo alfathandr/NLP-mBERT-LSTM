@@ -40,25 +40,25 @@ Proyek ini menggunakan dataset **DravidianCodeMix FIRE 2020**.
 
 Berikut adalah tata letak utama dari proyek ini:
 
-'''NLP-MBERT-LSTM/'''
-'''├── dataset/'''
-'''│ ├── kannada_sentiment_train.csv # Dataset mentah'''
-'''│ ├── mal_full_sentiment_train.csv # Dataset mentah'''
-'''│ ├── tamil_sentiment_full_train.csv # Dataset mentah, default digunakan.'''
-'''│ └── ... (dataset hasil balancing)'''
-'''│'''
-'''├── saved_models/'''
-'''│ ├── mbert_lstm_ros_3class.h5 # Bobot model'''
-'''│ ├── tokenizer_ros_3class/ # Direktori tokenizer'''
-'''│ ├── label_encoder_ros_3class.pkl # File label encoder'''
-'''│ └── ... (artefak lain untuk RUS dan ROS+ENN)'''
-'''│'''
-'''├── 01_data_preparation.py # Skrip untuk preparasi & balancing data'''
-'''├── 02_train.py # Skrip untuk training model'''
-'''├── 03_evaluate.py # Skrip untuk evaluasi model'''
-'''├── predict.py # Skrip untuk prediksi interaktif'''
-'''├── README.md # Dokumentasi proyek ini'''
-'''└── requirements.txt # Daftar pustaka Python yang dibutuhkan'''
+`NLP-MBERT-LSTM/`
+`├── dataset/`
+`│ ├── kannada_sentiment_train.csv # Dataset mentah`
+`│ ├── mal_full_sentiment_train.csv # Dataset mentah`
+`│ ├── tamil_sentiment_full_train.csv # Dataset mentah, default digunakan.`
+`│ └── ... (dataset hasil balancing)`
+`│`
+`├── saved_models/`
+`│ ├── mbert_lstm_ros_3class.h5 # Bobot model`
+`│ ├── tokenizer_ros_3class/ # Direktori tokenizer`
+`│ ├── label_encoder_ros_3class.pkl # File label encoder`
+`│ └── ... (artefak lain untuk RUS dan ROS+ENN)`
+`│`
+`├── 01_data_preparation.py # Skrip untuk preparasi & balancing data`
+`├── 02_train.py # Skrip untuk training model`
+`├── 03_evaluate.py # Skrip untuk evaluasi model`
+`├── predict.py # Skrip untuk prediksi interaktif`
+`├── README.md # Dokumentasi proyek ini`
+`└── requirements.txt # Daftar pustaka Python yang dibutuhkan`
 
 ---
 
@@ -113,8 +113,7 @@ python 02_train.py --method ros_enn
 
 python 03_evaluate.py --method ros_enn
 
-Gunakan model untuk memprediksi sentimen dari kalimat baru.
-
 # Contoh menggunakan model ROS+ENN untuk prediksi
 
+Gunakan model untuk memprediksi sentimen dari kalimat baru.
 python predict.py --method ros_enn
