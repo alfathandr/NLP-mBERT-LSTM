@@ -48,12 +48,6 @@ NLP-MBERT-LSTM/
 │ ├── tamil_sentiment_full_train.csv # Dataset mentah, default digunakan.
 │ └── ... (dataset hasil balancing)
 │
-├── saved_models/
-│ ├── mbert_lstm_ros_3class.h5 # Bobot model
-│ ├── tokenizer_ros_3class/ # Direktori tokenizer
-│ ├── label_encoder_ros_3class.pkl # File label encoder
-│ └── ... (artefak lain untuk RUS dan ROS+ENN)
-│
 ├── 01_data_preparation.py # Skrip untuk preparasi & balancing data
 ├── 02_train.py # Skrip untuk training model
 ├── 03_evaluate.py # Skrip untuk evaluasi model
@@ -75,7 +69,13 @@ Untuk menjalankan proyek ini di lingkungan lokal, ikuti langkah-langkah berikut:
     cd NLP-mBERT-LSTM
     ```
 
-2.  **Instal semua pustaka yang dibutuhkan:**
+2.  **Masuk ke direktori NLP-mBERT-LSTM:**
+
+    ```bash
+    cd NLP-mBERT-LSTM
+    ```
+
+3.  **Instal semua pustaka yang dibutuhkan:**
     ```bash
     pip install -r requirements.txt
     ```
@@ -90,19 +90,32 @@ Seluruh pipeline dapat dijalankan melalui terminal. Pastikan Anda sudah mengundu
 
 Pilih salah satu metode (`ros`, `rus`, `ros_enn`) untuk membuat dataset seimbang.
 
-# Contoh menggunakan metode ROS+ENN
+#### Contoh menggunakan metode
 
-python 01_data_preparation.py --method ros_enn
+    persiapan data metode ROS+ENN
 
-# Contoh training pada data hasil ROS+ENN
+    ```bash
+    python 01_data_preparation.py --method ros_enn
+    ```
 
-python 02_train.py --method ros_enn
+    training pada data hasil ROS+ENN metode ROS+ENN
 
-# Contoh evaluasi model ROS+ENN
+    ```bash
+    python 02_train.py --method ros_enn
+    ```
 
-python 03_evaluate.py --method ros_enn
+    evaluasi model ROS+ENN metode ROS+ENN
 
-# Contoh menggunakan model ROS+ENN untuk prediksi
+    ```bash
+    python 03_evaluate.py --method ros_enn
+    ```
 
-Gunakan model untuk memprediksi sentimen dari kalimat baru.
-python predict.py --method ros_enn
+    Gunakan model untuk memprediksi sentimen dari kalimat baru.
+
+    ```bash
+    python predict.py --method ros_enn
+    ```
+
+```
+
+```
